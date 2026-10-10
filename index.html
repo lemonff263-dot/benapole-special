@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>বেনাপোল স্পেশাল দই চিড়া</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#fffaf0;color:#263b22}
+header{background:#245b35;color:white;padding:18px;text-align:center}
+header h1{margin:0;font-size:25px}
+.hero{padding:30px 18px;text-align:center;background:linear-gradient(135deg,#fff0cc,#f5f8df)}
+.hero h2{font-size:29px;margin:10px}
+.hero p{line-height:1.7}
+.btn{display:inline-block;background:#ed8127;color:white;padding:12px 22px;border-radius:25px;text-decoration:none;border:0;font-size:16px}
+h2.section{text-align:center;margin-top:28px}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:15px}
+.item{background:white;border-radius:14px;padding:16px;box-shadow:0 3px 12px #00000012}
+.item h3{margin:0 0 8px}
+.price{color:#d66b1d;font-weight:bold;margin-bottom:12px}
+footer{background:#245b35;color:white;text-align:center;padding:20px;margin-top:25px}
+</style>
+</head>
+<body>
+<header>
+<h1>🥣 বেনাপোল স্পেশাল</h1>
+<p>স্বাদে ভরপুর, ভালোবাসায় তৈরি ❤️</p>
+</header>
+<section class="hero">
+<h2>স্পেশাল দই চিড়া</h2>
+<p>বেনাপোলের প্রিয় স্বাদ!<br>আজই অর্ডার করুন আপনার পছন্দের খাবার।</p>
+<a class="btn" href="#menu">মেনু দেখুন</a>
+</section>
+<h2 class="section" id="menu">🍽️ আমাদের মেনু</h2>
+<div class="menu">
+<div class="item"><h3>দই চিড়া</h3><p>সুস্বাদু ও মজাদার</p><div class="price">৳৪০</div><button class="btn" onclick="order('দই চিড়া',40)">অর্ডার</button></div>
+<div class="item"><h3>স্পেশাল দই চিড়া</h3><p>হাফ বাটি</p><div class="price">৳৬০</div><button class="btn" onclick="order('স্পেশাল দই চিড়া হাফ',60)">অর্ডার</button></div>
+<div class="item"><h3>স্পেশাল দই চিড়া</h3><p>ফুল বাটি</p><div class="price">৳৮০</div><button class="btn" onclick="order('স্পেশাল দই চিড়া ফুল',80)">অর্ডার</button></div>
+<div class="item"><h3>নাচোস</h3><p>ক্রিস্পি ও মজাদার</p><div class="price">৳৮০ থেকে</div><button class="btn" onclick="order('নাচোস',80)">অর্ডার</button></div>
+</div>
+<footer>
+<h3>📍 আমাদের দোকান</h3>
+<p>বেনাপোল নিত্য হাট, মেয়র মার্কেট, পার্কিং এরিয়া, ঢাকা বিরিয়ানি হাউজের পিছনে, বেনাপোল, যশোর।</p>
+<p>অর্ডার করতে ফোনে যোগাযোগ করুন।</p>
+<p>© বেনাপোল স্পেশাল দই চিড়া</p>
+</footer>
+<script>
+function order(name,price){
+alert('আপনি বেছে নিয়েছেন: '+name+'\nমূল্য: ৳'+price+'\nঅনলাইন অর্ডার ব্যবস্থা পরবর্তী ধাপে যুক্ত হবে।');
+}
+</script>
+</body>
+</html>
